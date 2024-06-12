@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CarConstructor {
     private String make;
     private double price;
@@ -10,7 +12,7 @@ public class CarConstructor {
         this.price = price;
         this.year = year;
         this.color = color;
-        this.parts = parts;
+        this.parts = Arrays.copyOf(parts, parts.length); // this create a brand new array of refrence that we passed in
     }
 
     // COPY CONSTRUCTOR    source--> object that we pass in
