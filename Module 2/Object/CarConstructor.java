@@ -21,7 +21,7 @@ public class CarConstructor {
         this.price = source.price;
         this.year = source.year;
         this.color = source.color;
-        this.parts = source.parts;
+        this.parts = Arrays.copyOf(source.parts, source.parts.length);
     }
 
     // as the field are private so we should use getter to make it visible at other classes

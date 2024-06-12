@@ -3,14 +3,14 @@
 public class MainCarConstructor {
     public static void main(String[] args) {
 
-        String[] spareParts = new String[] {"Tires", "Keys"}; // new means we are creating object --> creating new object of string class
+        // String[] spareParts = new String[] {"Tires", "Keys"}; // new means we are creating object --> creating new object of string class
 
-        CarConstructor nissan = new CarConstructor("Nissan", 10000, 2020, "Green", spareParts);
-        CarConstructor dodge = new CarConstructor("Dodge", 11000, 2019, "Blue", spareParts);
+        CarConstructor nissan = new CarConstructor("Nissan", 10000, 2020, "Green", new String[] {"Tires", "Keys"});
+        CarConstructor dodge = new CarConstructor("Dodge", 11000, 2019, "Blue", new String[] {"Tires", "Keys"});
         
         // CarConstructor nissan2 = nissan; // both variable are going to share the refrence of exact same object --> instead of this we are going to use copy constructor
 
-        spareParts[0] = "Filter";
+        // spareParts[0] = "Filter";
 
         CarConstructor nissan2 = new CarConstructor(nissan); // since i am using copy constructor i am passing one argument
 
