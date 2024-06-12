@@ -1,5 +1,7 @@
 // this program helps to understand the concept of "constructor, getter, setter, copy constructor" which are very essential in object oriented programming
 
+import java.util.Arrays;
+
 public class MainCarConstructor {
     public static void main(String[] args) {
 
@@ -12,7 +14,13 @@ public class MainCarConstructor {
         carParts[0] = "Filter"; // this share the same refrence as nissan parts field
 
         CarConstructor dodge = new CarConstructor("Dodge", 11000, 2019, "Blue", new String[] {"Tires", "Keys"});
-        
+
+        /* 
+        // After fixing setter and getter
+        nissan.setParts(carParts);
+        System.out.println(Arrays.toString(nissan.getParts()));
+        */
+
         // CarConstructor nissan2 = nissan; // both variable are going to share the refrence of exact same object --> instead of this we are going to use copy constructor
 
         // spareParts[0] = "Filter";
@@ -43,5 +51,7 @@ public class MainCarConstructor {
 
         // TASK OF CAR OBJECT
         nissan2.drive();
+
+        System.out.println(nissan);
     }
 }

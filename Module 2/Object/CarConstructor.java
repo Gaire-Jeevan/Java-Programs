@@ -69,4 +69,15 @@ public class CarConstructor {
         System.out.println("\nYour bought the beautiful " + this.year +" " + this.color + " " + this.make + " for " + this.price + ".");
         System.out.println("Please drive your car to the nearest exit.\n");
     }
-}
+
+    // override the default toString() method
+    public String toString() {
+            return "Make: " + this.make + ".\n" 
+                +  "Price: " + this.price + ".\n"
+                +  "Year: " + this.year + ".\n"
+                +  "Color: " + this.color + ".\n"
+                +  "Parts: " + Arrays.toString(parts) + ".\n";
+    
+        }
+    }
+
