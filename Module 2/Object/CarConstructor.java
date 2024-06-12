@@ -58,11 +58,11 @@ public class CarConstructor {
     }
 
     public String[] getParts() {
-        return parts;
+        return Arrays.copyOf(this.parts, this.parts.length);
     }
 
     public void setParts(String[] parts) {
-        this.parts = parts;
+        this.parts = Arrays.copyOf(parts, parts.length);
     }
 
     public void drive() { // no need to keep this keyword

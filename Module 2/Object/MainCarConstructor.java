@@ -6,6 +6,11 @@ public class MainCarConstructor {
         // String[] spareParts = new String[] {"Tires", "Keys"}; // new means we are creating object --> creating new object of string class
 
         CarConstructor nissan = new CarConstructor("Nissan", 10000, 2020, "Green", new String[] {"Tires", "Keys"});
+
+        // FIXING GETTER
+        String[] carParts = nissan.getParts();
+        carParts[0] = "Filter"; // this share the same refrence as nissan parts field
+
         CarConstructor dodge = new CarConstructor("Dodge", 11000, 2019, "Blue", new String[] {"Tires", "Keys"});
         
         // CarConstructor nissan2 = nissan; // both variable are going to share the refrence of exact same object --> instead of this we are going to use copy constructor
