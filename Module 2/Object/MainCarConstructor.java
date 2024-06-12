@@ -1,5 +1,3 @@
-// this program helps to understand the concept of "constructor, getter, setter, copy constructor" which are very essential in object oriented programming
-
 import java.util.Arrays;
 
 public class MainCarConstructor {
