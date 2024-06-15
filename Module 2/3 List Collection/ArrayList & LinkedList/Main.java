@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         // List<String> cities = new ArrayList<>(); // new ArrayList
+        
         List<String> cities = new LinkedList<>(); // new LinkedList
         cities.add("Paris");
         cities.add("Florence");
